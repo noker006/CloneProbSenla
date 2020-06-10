@@ -7,6 +7,7 @@ public class RBService  {
         HttpResponse response= new Http().send(request);
         Rate rate= (Rate)JSON.deserialize(response.getBody(), Rate.class);
 		System.debug(response.getBody());
+        i++;
     } 
     
     public  class Rate{
